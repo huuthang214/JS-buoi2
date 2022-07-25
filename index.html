@@ -13,22 +13,106 @@
 </head>
 
 <body>
-    <section id="Salary" class="py-5">
+    <section id="Salary" class="py-5 bg-c bg-secondary">
         <div class="container">
-        <h1>Tính tiền lương nhân viên</h1>
+            <div class="col-md-6">
+                <h1>Tính tiền lương nhân viên</h1>
 
-        <div class="form-group pb-2">
-            <label for=""></label>
-            <input type="number" class="form-control" name="" id="days" aria-describedby="helpId"
-                placeholder="Hãy nhập số ngày làm của bạn">
-        </div>
-        <h2>Lương 1 ngày của bạn là: 100.000 VND</h2>
-      <div class="tinhTien pt-4">
-        <button class="btn btn-success" onclick="cals()">TINH NGAY</button>
-      </div>
-      <div id="result" class="pt-2"></div>
+                <div class="form-group pb-2">
+                    <label for=""></label>
+                    <input type="number" class="form-control" name="" id="days" aria-describedby="helpId"
+                        placeholder="Hãy nhập số ngày làm của bạn">
+                </div>
+                <h2>Lương 1 ngày của bạn là: 100.000 VND</h2>
+                <div class="tinhTien pt-4">
+                    <button class="btn btn-success" onclick="cals()">TINH NGAY</button>
+                </div>
+                <div id="result" class="pt-2"></div>
+            </div>
     </section>
-    </div>
+    <section id="avg" class="py-5 bg-secondary mt-5">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h1>Nhập lần lượt 5 số thực bất kì</h1>
+                    <label for="no1">No1</label>
+                    <input type="text" name="" id="no1" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="no2">No2</label>
+                    <input type="text" name="" id="no2" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="no3">No3</label>
+                    <input type="text" name="" id="no3" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="no4">No4</label>
+                    <input type="text" name="" id="no4" class="form-control" placeholder="" aria-describedby="helpId">
+                    <label for="no5">No5</label>
+                    <input type="text" name="" id="no5" class="form-control" placeholder="" aria-describedby="helpId">
+
+                </div>
+                <button class="btn btn-success" onclick="tinhNgay()">Tính Ngay</button>
+                <div id="ketQua">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="avg" class="py-5 bg-secondary mt-5">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h1>Nhập số tiền USD của bạn</h1>
+                    <label for="usd"></label>
+                    <input type="text" name="" id="usd" class="form-control" placeholder="" aria-describedby="helpId">
+
+
+
+                </div>
+                <button class="btn btn-success" onclick="tinhTien()">Tính Ngay</button>
+                <div id="tinh" class="py-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="hcn" class="py-5 bg-secondary mt-5">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h1>Tính kích thước hình chữ nhật</h1>
+                    <label for="length">nhập chiều dài</label>
+                    <input type="text" name="" id="length" class="form-control" placeholder=""
+                        aria-describedby="helpId">
+                    <label for="width">nhập chiều rộng</label>
+                    <input type="text" name="" id="width" class="form-control" placeholder="" aria-describedby="helpId">
+
+
+
+                </div>
+                <button class="btn btn-success" onclick="hcn()">Tính Ngay</button>
+                <div id="tinhHcn" class="py-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="kySo" class="py-5 bg-secondary mt-5">
+        <div class="container">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <h1>Tính tổng ký số</h1>
+                    <label for="number">nhập một số</label>
+                    <input type="text" name="" id="number" class="form-control" placeholder=""
+                        aria-describedby="helpId">
+                   
+
+
+                </div>
+                <button class="btn btn-success" onclick="kySo()">Tính Ngay</button>
+                <div id="tinhKyso" class="py-2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
